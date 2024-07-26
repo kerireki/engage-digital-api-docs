@@ -1,6 +1,8 @@
 # Single Sign-on Using JWT
 
-Single sign-on (SSO) is an authentication process which allows our clients to authenticate users on their systems and then tell RingCX Digital who that user is. In effect, this allows users to log in only once and then be able to use RingCX Digital without having to use their credentials again.
+**Please note:**  Single sign-on (SSO) is currently used for Engage Digital Standalone only.
+
+Single sign-on (SSO) is an authentication process which allows our clients to authenticate users on their systems and then tell who that user is. In effect, this allows users to log in only once and then be able to use the product without having to use their credentials again.
 
 There are a few key benefits to using SSO:
 
@@ -31,7 +33,7 @@ https://your-subdomain.digital.ringcentral.com/users/auth/jwt/callback?jwt={jwt_
 !!! Note
     This option can only be disabled if you configured a Remote login URL.
 
-Once you enable SSO, all unauthenticated users that visit a page will get redirected to the "*JWT Remote login*" url. But, if the checkbox "*Enable non-SSO login*" is enabled, users will still be able to login using their RingCX Digital credentials by visiting:
+Once you enable SSO, all unauthenticated users that visit a page will get redirected to the "*JWT Remote login*" url. But, if the checkbox "*Enable non-SSO login*" is enabled, users will still be able to login using their credentials by visiting:
 
 ``` html
 https://your-subdomain.digital.ringcentral.com/login
